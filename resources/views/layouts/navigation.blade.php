@@ -52,6 +52,10 @@
                         </x-dropdown-link>
 
                         <!-- Authentication -->
+                        <x-dropdown-link :href="route('language')">
+                            {{ __('Language') }}
+                        </x-dropdown-link>
+
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf
 
